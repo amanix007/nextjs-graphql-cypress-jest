@@ -1,5 +1,5 @@
 {
-  "name": "nextjs13-with-graphql",
+  "name": "nextjs-graphql-cypress-jest",
   "version": "0.1.0",
   "private": true,
   "scripts": {

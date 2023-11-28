@@ -18,6 +18,7 @@ const Novel = ({ params: { id } }: Props) => {
 	const { data, loading, error } = useQuery(GET_NOVEL, {
 		variables: { id },
 	});
+	console.log('error asdasdf:', error)
 	const [addAuthor] = useMutation(ADD_AUTHOR, {
 		variables: { novelId: id, name },
 		refetchQueries: [{ query: GET_NOVEL, variables: { id } }],
